@@ -8,22 +8,52 @@
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
   
-  <title>Frontend Mentor | Conference ticket generator</title>
+  <title>Conference ticket generator form</title>
 
 </head>
 <body>
-  <main class="">
+  <header></header>
+
+  <main id="">
+    <h1>
+      Your Jorney to Coding Conf 2025 Starts Here!
+    </h1>
+
+    <h2>
+      Secure your spot at next year's biggest coding cogerence.
+    </h2>
+
     <form action="">
-      
+
+      <label for="photoFile">Upload Avatar</label>
+      <input type="file" name="photoFile" id="photoFile">
+      <p>Upload your photo (JPG or PNG, max size: 5MG).</p>
+
+      <label for="nameUser">Full Name</label>
+      <input type="text" name="nameUser" id="nameUser">
+
+      <label for="emailUser">Email Address</label>
+      <input type="email" name="emailUser" id="emailUser">
+
+      <label for="emailUser">GitHub Username</label>
+      <input type="text" name="gitHubUser" id="gitHubUser" placeholder="@yourusername">
+
+      <button type="submit" id="formButton">
+        Generate My Ticket
+      </button>
+
     </form>
     
-    <div id="top-right">teste</div>
+    <div id="top-right"></div>
     <div id="bottom-left"></div>
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
+    
+    <footer>
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/joaovictor1516">João Victor Campos</a>.
+      </p>
+    </footer>
   </main>
 </body>
 </html>
