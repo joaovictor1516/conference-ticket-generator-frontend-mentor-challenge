@@ -21,6 +21,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: "Inconsolata", serif;
+}
+
+header{
+ display: flex;
+ align-items: center;
+ justify-items: center;   
 }
 
 main{
@@ -29,6 +36,35 @@ main{
     background-repeat: repeat;
     width: 100vh;
     height: 100vh;
+}
+
+h1{
+    color: #ffffff;
+}
+
+h2{
+    color: #8784a4;
+}
+
+form{
+    color: #8784a4;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+label{
+    color: #d2d1d6;
+    font-size: 20px;
+}
+
+button{
+    background-color: #f57261;
+    color: #0c082b;
+}
+
+button:hover{
+    background-color: #e16151;
 }
 
 .attribution {
