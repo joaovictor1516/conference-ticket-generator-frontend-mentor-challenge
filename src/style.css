@@ -34,7 +34,7 @@ main{
     background-image: url("../assets/images/pattern-lines.svg");
     background-position: center;
     background-repeat: repeat;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -46,11 +46,23 @@ h2{
     color: #8784a4;
 }
 
+#content {
+    height: 350px;
+}
+
 form{
     color: #8784a4;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
+    padding: 10px;
+}
+
+p{
+    font-size: 11px;
+    text-align: center;
+    margin-top: -8px;
 }
 
 label{
@@ -58,13 +70,29 @@ label{
     font-size: 20px;
 }
 
-button{
+input{
+    background-color: transparent;
+    border: 1px solid #4b486a;
+    margin: 10px
+}
+
+button {
     background-color: #f57261;
     color: #0c082b;
 }
 
-button:hover{
+button:hover {
     background-color: #e16151;
+}
+
+input, button {
+    border-radius: 5px;
+    width: 250px;
+    height: 25px;
+}
+
+#photoFile {
+    height: 100px;
 }
 
 .attribution {
