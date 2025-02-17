@@ -19,23 +19,32 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: "Inconsolata", serif;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 header{
  display: flex;
- align-items: center;
- justify-items: center;   
+ align-content: center;
+ justify-content: center;
+ width: 100vw
 }
 
 main{
     background-image: url("../assets/images/pattern-lines.svg");
     background-position: center;
     background-repeat: repeat;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h1{
@@ -59,7 +68,7 @@ form{
     padding: 10px;
 }
 
-p{
+#informationPhoto{
     font-size: 11px;
     text-align: center;
     margin-top: -8px;
@@ -73,7 +82,8 @@ label{
 input{
     background-color: transparent;
     border: 1px solid #4b486a;
-    margin: 10px
+    margin: 10px;
+    padding: 5px;
 }
 
 button {
@@ -87,19 +97,37 @@ button:hover {
 
 input, button {
     border-radius: 5px;
-    width: 250px;
-    height: 25px;
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+}
+
+input[type="file"]{
+    display: none;
 }
 
 #photoFile {
-    height: 100px;
+    box-sizing: border-box;
+    border: 1px dashed #4b486a;
+    width: 230px;
+    height: 50px;
 }
 
-.attribution {
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+}
+
+#attribution {
     font-size: 11px;
-    text-align: center;
+    padding: 0;
+    display: inline;
+    margin-left: -65px;
 }
 
-.attribution a {
+#attribution a {
     color: hsl(228, 45%, 44%);
 }
