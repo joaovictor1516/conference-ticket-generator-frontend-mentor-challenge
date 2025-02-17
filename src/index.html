@@ -9,9 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-
-
-  <script src="main.js"></script>
   
   <title>Conference ticket generator form</title>
 
@@ -20,43 +17,64 @@
   <header>
     <img src="../assets/images/logo-full.svg" alt="Imagem da logo com 'Coding Conf' escrito do lado direto.">
   </header>
+  <section id="form-section">
+    <main id="main">
+      <h1>
+        Your Jorney to Coding Conf 2025 Starts Here!
+      </h1>
+      <h2>
+        Secure your spot at next year's biggest coding cogerence.
+      </h2>
+      <div id="content">
+        <form action="">
+            <div id="upload-container">
+              <label for="photoFile">Upload avatar</label>
+              <input type="file" name="photoFile" id="photoFile" accept="image/png, image/jpg" required>
+              
+              <label for="photoFile" id="elements-photo">
+                <img src="../assets/images/icon-upload.svg" alt="imagem de uma núvem">
+                <span>Drag and drop or click to upload</span>
+              </label>
+            </div>
+            <p id="information-photo">Upload your photo (JPG or PNG, max size: 5MG).</p>
+    
+          <label for="nameUser">Full Name</label>
+            <input type="text" name="nameUser" id="nameUser" required>
+    
+          <label for="emailUser">Email Address</label>
+            <input type="email" name="emailUser" id="emailUser" required>
+    
+          <label for="emailUser">GitHub Username</label>
+            <input type="text" name="gitHubUser" id="gitHubUser" placeholder="@yourusername">
+    
+          <button type="submit" id="button">
+            Generate My Ticket
+          </button>
+        </form>
+      </div>
+    </main>
+  </section>
 
-  <main id="main">
-    <h1>
-      Your Jorney to Coding Conf 2025 Starts Here!
-    </h1>
+  <section id="ticket-section" class="hidden">
+    <main>
+      <h1>Congrats, <strong id="user-name"></strong>! your ticket is ready</h1>
+      <h2>We've emailed your ticket to <strong id="user-email"></strong> and will send updates in the run up to event.</h2>
 
-    <h2>
-      Secure your spot at next year's biggest coding cogerence.
-    </h2>
+      <div id="ticket">
+        <div id="ticket-head">
 
-    <div id="content">
-      <form action="">
-        <label for="photoFile">Upload Avatar</label>
-          <input type="file" name="photoFile" id="photoFile">
-          <p>Upload your photo (JPG or PNG, max size: 5MG).</p>
-        
-        <label for="nameUser">Full Name</label>
-          <input type="text" name="nameUser" id="nameUser">
+        </div>
+      </div>
+    </main>
+  </section>
     
-        <label for="emailUser">Email Address</label>
-          <input type="email" name="emailUser" id="emailUser">
-    
-        <label for="emailUser">GitHub Username</label>
-          <input type="text" name="gitHubUser" id="gitHubUser" placeholder="@yourusername">
-    
-        <button type="submit" id="formButton">
-          Generate My Ticket
-        </button>
-      </form>
-    </div>
-    
-    <footer>
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-        Coded by <a href="https://github.com/joaovictor1516">João Victor Campos</a>.
-      </p>
-    </footer>
-  </main>
+  <footer>
+    <p id="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/joaovictor1516">João Victor Campos</a>.
+    </p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
