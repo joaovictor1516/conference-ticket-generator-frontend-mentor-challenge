@@ -45,6 +45,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #d2d1d6;
 }
 
 h1{
@@ -60,7 +61,6 @@ h2{
 }
 
 form{
-    color: #8784a4;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,6 +84,7 @@ input{
     border: 1px solid #4b486a;
     margin: 10px;
     padding: 5px;
+    color: #d2d1d6;
 }
 
 button {
@@ -106,11 +107,33 @@ input[type="file"]{
     display: none;
 }
 
+#upload-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: content;
+    padding: 5px;
+}
+
+#photo-details {
+    box-sizing: border-box;
+    border: 2px dashed #4b486a;
+    height: 30px;
+}
+
 #photoFile {
     box-sizing: border-box;
     border: 1px dashed #4b486a;
     width: 230px;
     height: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+#ticket{
+    background-image: url("../assets/images/pattern-ticket.svg");
 }
 
 footer{
